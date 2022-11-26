@@ -34,7 +34,7 @@ class FeetToMeters:
         feet_entry.focus()
         root.bind("<Return>", self.calculate)
 
-    def calculate(self, *args):
+    def calculate(self):
         try:
             value = float(self.feet.get())
             self.meters.set(int(0.3048 * value * 10000.0 + 0.5)/10000.0)
